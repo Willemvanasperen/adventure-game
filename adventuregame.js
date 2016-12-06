@@ -34,7 +34,9 @@ function hide1(){
 
 	butt1.innerHTML= "Peek around the corner";
 
-	butt2.innerHTML= "Fuck em up";
+	butt2.innerHTML= "Beat em up";
+
+	butt3.innerHTML= "Still run away";
 
 	document.getElementById("peeps").style.display = "none";
 }
@@ -89,7 +91,6 @@ function yesdumb(){
 }
 
 function iDont(){
-	
 	
 	butt1.style.cssText = "display:block;";
 	butt2.style.cssText = "display:none;";
