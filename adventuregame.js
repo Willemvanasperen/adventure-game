@@ -28,10 +28,20 @@ function ifYouStartYouGetCookie(){
 	why.style.cssText = 'color: white;';
 }
 
+function ifDontStart(){
+
+	butt1.innerHTML = "cuz u dumb";
+	butt1.setAttribute("onclick","javascript:gameover1()");
+	
+	butt2.innerHTML = "idk";
+	butt2.setAttribute("onclick","javascript:iDont()");
+
+	why.style.cssText = "display:block;";
+	
+}
+
 function hide1(){
  	
-	
-
 	butt1.innerHTML= "Peek around the corner";
 
 	butt2.innerHTML= "Beat em up";
@@ -50,8 +60,23 @@ function run1(){
 	butt2.style.cssText = 'color:black;';
 	butt2.setAttribute("onclick","javascript:right1()");
 
+	butt3.innerHTML = "Go straight ahead";
+	butt3.setAttribute("onclick","javascript:forward1()");
+
 	document.getElementById("peeps").style.display = "none";
 
+}
+function right1(){
+
+	butt1.innerHTML = "Go to the casino";
+
+	butt2.innerHTML = "Go to the supermarket";
+
+	butt3.innerHTML = "Go to the local libary";
+}
+
+function forward1(){
+	
 }
 
 function left1(){
@@ -59,35 +84,35 @@ function left1(){
 	butt1.innerHTML = "Go to warehouse";
 
 	butt2.innerHTML = "Jump off the bridge";
+	
+	butt3.innerHTML = "Try to fight them";
+	butt3.setAttribute("onclick","javascript:fighthorde1()");
+	
 	document.getElementById("horde").style.display = "block";
-	
-
 }
 
-function right1(){
+function fighthorde1(){
 
+	butt1.innerHTML = "Stick";
+
+	butt2.innerHTML = "Stone";
+ 
+	butt3.innerHTML = "Toiletpaper";
+
+	document.getElementById("horde").style.display = "none";
+	document.getElementById("fighting").style.display = "block";
 }
 
-function ifDontStart(){
-
-	
-	butt2.innerHTML = "idk";
-	butt2.setAttribute("onclick","javascript:iDont()");
-
-
-	butt1.innerHTML = "cuz u dumb";
-	butt1.setAttribute("onclick","javascript:yesdumb()");
-
-	why.style.cssText = "display:block;";
-	
-}
-
-function yesdumb(){
+function gameover1(){
 
 	dumb.style.cssText = "display:block;";
 	butt1.style.cssText = "display:none;";
 	butt2.style.cssText = "display:none;";
 	why.style.cssText = "display:none;";
+}
+
+function gameover2(){
+
 }
 
 function iDont(){
