@@ -8,7 +8,7 @@ var dumb = document.getElementById("stupid");
 
 
 function ifYouStartYouGetCookie(){
-
+	
 	document.getElementById("peeps").style.display = "block";
 
 	butt1.style.cssText = 'color: red;';
@@ -43,10 +43,13 @@ function ifDontStart(){
 function hide1(){
  	
 	butt1.innerHTML= "Peek around the corner";
+	butt1.setAttribute("onclick","javascript:corner1()");
 
 	butt2.innerHTML= "Beat em up";
+	butt2.setAttribute("onclick","javascript:beat1()");
 
 	butt3.innerHTML= "Still run away";
+	butt3.setAttribute("onclick","javascript:away1()");
 
 	document.getElementById("peeps").style.display = "none";
 }
@@ -69,14 +72,26 @@ function run1(){
 function right1(){
 
 	butt1.innerHTML = "Go to the casino";
+	butt1.setAttribute("onclick","javascript:casino1()");
 
 	butt2.innerHTML = "Go to the supermarket";
+	butt2.setAttribute("onclick","javascript:supermarket1()");
 
 	butt3.innerHTML = "Go to the local libary";
+	butt3.setAttribute("onclick","javascript:libary1()");
 }
 
 function forward1(){
 	
+	butt1.innerHTML = "Go to the rubberduck factory";
+	butt1.setAttribute("onclick","javascript:rubberduck1()");
+
+	butt2.innerHTML = "Go to the bucket factory";
+	butt2.setAttribute("onclick","javascript:bucket1()");
+
+	butt3.innerHTML = "Go to the gun factory";
+	butt3.setAttribute("onclick","javascript:gun1()");
+
 }
 
 function left1(){
@@ -93,14 +108,37 @@ function left1(){
 
 function fighthorde1(){
 
-	butt1.innerHTML = "Stick";
+	butt1.innerHTML = "Stik";
+	butt3.setAttribute("onclick","javascript:woodstik1()");
 
 	butt2.innerHTML = "Stone";
  
 	butt3.innerHTML = "Toiletpaper";
+	butt3.setAttribute("onclick","javascript:toilet1()");
 
 	document.getElementById("horde").style.display = "none";
 	document.getElementById("fighting").style.display = "block";
+}
+
+function woodstik1(){
+		
+		butt1.style.cssText = "display:none;";
+		butt2.style.cssText = "display:none;";
+		butt3.style.cssText = "display:none;";
+		
+		document.getElementById("stik").style.display = "block";
+
+
+}
+
+function toilet(){
+
+	butt1.style.cssText = "display:none;";
+	butt2.style.cssText = "display:none;";
+	butt3.style.cssText = "display:none;";
+	
+	document.getElementById("toelet").style.display = "block";
+
 }
 
 function gameover1(){
@@ -111,14 +149,42 @@ function gameover1(){
 	why.style.cssText = "display:none;";
 }
 
-function gameover2(){
-
-}
-
 function iDont(){
 	
 	butt1.style.cssText = "display:block;";
 	butt2.style.cssText = "display:none;";
 	
+
+}
+
+function gun1(){
+
+	document.getElementById("glock").style.display = "block";
+
+	butt1.style.cssText = "display:none;";
+	butt2.style.cssText = "display:none;";
+	butt3.style.cssText = "display:none;";
+
+}
+
+
+
+function rubberduck1(){
+
+	document.getElementById("duck").style.display = "block";
+
+	butt1.style.cssText = "display:none;";
+	butt2.style.cssText = "display:none;";
+	butt3.style.cssText = "display:none;";
+
+}
+
+function bucket1(){
+
+	document.getElementById("bucket").style.display = "block";
+
+	butt1.style.cssText = "display:none;";
+	butt2.style.cssText = "display:none;";
+	butt3.style.cssText = "display:none;";
 
 }
