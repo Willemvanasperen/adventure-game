@@ -4,11 +4,14 @@ var  butt3 = document.getElementById("kiwi");
 
 var  why = document.getElementById("why");
 var dumb = document.getElementById("stupid");
-
-
+	
+document.getElementById("mystart").style.display = "block";
+document.getElementById("imgstart").style.display = "block";
 
 function ifYouStartYouGetCookie(){
 
+	document.getElementById("imgstart").style.display = "none";
+    document.getElementById("mystart").style.display = "none";
 	document.getElementById("hi").style.display = "none";
 	document.getElementById("peeps").style.display = "block";
 
@@ -27,14 +30,12 @@ function ifYouStartYouGetCookie(){
 	why.setAttribute("onclick","javascript:fight1()");
 	why.innerHTML = "Fight";
 	why.style.cssText = 'color: white;';
-
 }  //The start of the game
 
 function hi1(){
 
-
 	document.getElementById("hi").style.display = "block";
-		document.getElementById("peeps").style.display = "none";
+	document.getElementById("peeps").style.display = "none";
 
 	butt1.style.cssText = "display:none;";
 	butt2.style.cssText = "display:none;";
@@ -50,7 +51,8 @@ function ifDontStart(){
 	butt2.setAttribute("onclick","javascript:iDont()");
 
 	why.style.cssText = "display:block;";
-	
+	document.getElementById("mystart").style.display = "none";
+	document.getElementById("imgstart").style.display = "none";
 }//This happens if you click on dont start 
 
 function hide1(){
@@ -62,10 +64,18 @@ function hide1(){
 	butt2.setAttribute("onclick","javascript:beat1()");
 
 	butt3.innerHTML= "Still run away";
-	butt3.setAttribute("onclick","javascript:away1()");
-
+	butt3.setAttribute("onclick","javascript:run1()");
 
 	document.getElementById("peeps").style.display = "none";
+}
+
+function beat1(){
+
+	document.getElementById("beating").style.display = "block";
+
+	butt1.style.cssText = "display:none;";
+	butt2.style.cssText = "display:none;";
+	butt3.style.cssText = "display:none;";
 }
 
 function corner1(){
@@ -107,6 +117,24 @@ function right1(){
 	butt3.setAttribute("onclick","javascript:libary1()");
 }
 
+function supermarket1(){
+
+	document.getElementById("supersuup").style.display = "block";
+
+	butt1.style.cssText = "display:none;";
+	butt2.style.cssText = "display:none;";
+	butt3.style.cssText = "display:none;";
+}
+
+function libary1(){
+
+	document.getElementById("liebbie").style.display = "block";
+
+	butt1.style.cssText = "display:none;";
+	butt2.style.cssText = "display:none;";
+	butt3.style.cssText = "display:none;";
+}
+
 function casino1(){
 
 	butt1.innerHTML = "Watch out for the running zombies.";
@@ -128,6 +156,15 @@ function running1(){
 	document.getElementById("run").style.display = "block";
 }
 
+function crawling1(){
+
+	butt1.style.cssText = "display:none;";
+	butt2.style.cssText = "display:none;";
+	butt3.style.cssText = "display:none;";
+		
+	document.getElementById("crawl").style.display = "block";
+}
+
 function retarted1(){
 
 	butt1.innerHTML = "Go to a church named hell.";
@@ -142,6 +179,7 @@ function retarted1(){
 	document.getElementById("retard").style.display = "block";
 }
 
+
 function hell1(){
 
 	butt1.style.cssText = "display:none;";
@@ -150,7 +188,6 @@ function hell1(){
 		
 	document.getElementById("hell").style.display = "block";
 	document.getElementById("retard").style.display = "none";
-
 }
 
 function heaven1(){
@@ -161,18 +198,7 @@ function heaven1(){
 		
 	document.getElementById("heaven").style.display = "block";
 	document.getElementById("retard").style.display = "none";
-
 }
-
-function crawling1(){
-
-	butt1.style.cssText = "display:none;";
-	butt2.style.cssText = "display:none;";
-	butt3.style.cssText = "display:none;";
-		
-	document.getElementById("crawl").style.display = "block";
-}
-
 
 
 
