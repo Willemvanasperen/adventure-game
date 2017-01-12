@@ -1,14 +1,17 @@
 #why{
 	display: none;
+	color: white;
 }
 #stupid{
 	display: none;
+	color: white;
 }
 #horde{
 	display: none;
 }
 #peeps{
 	display: none;
+	color: white
 }
 #kiwi{
 	display: none;
@@ -33,12 +36,13 @@
 }
 #hi{
 	display: none;
+	color:white;
 }
 #warhous{
 	display:none;
 }
 #stone{
-	display: none;
+	display:none;
 }
 #stupidshit{
 	display: none;
@@ -69,10 +73,4 @@
 }
 #mystart{
 	display: none;
-}
-#imgstart{
-	display: none;
-	width: 300px;
-	height: 200px;
-	background-image: url("img/start.jpg");
 }

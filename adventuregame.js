@@ -6,14 +6,14 @@ var  why = document.getElementById("why");
 var dumb = document.getElementById("stupid");
 	
 document.getElementById("mystart").style.display = "block";
-document.getElementById("imgstart").style.display = "block";
+document.body.style.backgroundImage = "url('start.jpg')";
 
 function ifYouStartYouGetCookie(){
 
-	document.getElementById("imgstart").style.display = "none";
     document.getElementById("mystart").style.display = "none";
 	document.getElementById("hi").style.display = "none";
 	document.getElementById("peeps").style.display = "block";
+	document.body.style.backgroundImage = "url('peoep.jpg')";
 
 	butt1.style.cssText = 'color: red;';
 	butt1.innerHTML = "Run";
@@ -36,6 +36,7 @@ function hi1(){
 
 	document.getElementById("hi").style.display = "block";
 	document.getElementById("peeps").style.display = "none";
+	document.body.style.backgroundImage = "url('cannibal.jpg')";
 
 	butt1.style.cssText = "display:none;";
 	butt2.style.cssText = "display:none;";
@@ -44,6 +45,8 @@ function hi1(){
 
 function ifDontStart(){
 
+	document.body.style.backgroundImage = "url('snape.jpg')";
+
 	butt1.innerHTML = "cuz u dumb";
 	butt1.setAttribute("onclick","javascript:gameover1()");
 	
@@ -51,6 +54,7 @@ function ifDontStart(){
 	butt2.setAttribute("onclick","javascript:iDont()");
 
 	why.style.cssText = "display:block;";
+
 	document.getElementById("mystart").style.display = "none";
 	document.getElementById("imgstart").style.display = "none";
 }//This happens if you click on dont start 
@@ -88,6 +92,8 @@ function corner1(){
 }
 
 function run1(){
+
+	document.body.style.backgroundImage = "url('run.jpg')";
 
 	butt1.innerHTML = "Go Left";
 	butt1.style.cssText = 'color:black;';
@@ -285,11 +291,11 @@ function toilet1(){
 
 function gameover1(){
 
-	dumb.style.cssText = "display:block;";
-
 	butt1.style.cssText = "display:none;";
 	butt2.style.cssText = "display:none;";
 	why.style.cssText = "display:none;";
+
+	document.body.style.backgroundImage = "url('grin.jpg')";
 }
 
 function iDont(){
