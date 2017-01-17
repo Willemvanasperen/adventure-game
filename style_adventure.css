@@ -21,6 +21,7 @@
 }
 #duck{
 	display: none;
+	color: white;
 }
 #toelet{
 	display: none;
@@ -46,6 +47,7 @@
 }
 #stupidshit{
 	display: none;
+	color: #FE0000;
 }
 #run{
 	display: none;
@@ -64,6 +66,7 @@
 }
 #beating{
 	display: none;
+	color: white;
 }
 #supersuup{
 	display: none;

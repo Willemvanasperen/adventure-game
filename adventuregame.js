@@ -71,6 +71,9 @@ function hide1(){
 	butt3.setAttribute("onclick","javascript:run1()");
 
 	document.getElementById("peeps").style.display = "none";
+
+	document.body.style.backgroundImage = "url('hide.jpg')";
+
 }
 
 function beat1(){
@@ -80,9 +83,13 @@ function beat1(){
 	butt1.style.cssText = "display:none;";
 	butt2.style.cssText = "display:none;";
 	butt3.style.cssText = "display:none;";
+
+	document.body.style.backgroundImage = "url('fight.jpg')";
 }
 
 function corner1(){
+
+	document.body.style.backgroundImage = "url('peek.jpg')";
 
 	document.getElementById("stupidshit").style.display = "block";
 
@@ -311,6 +318,8 @@ function gun1(){
 	butt1.style.cssText = "display:none;";
 	butt2.style.cssText = "display:none;";
 	butt3.style.cssText = "display:none;";
+
+	document.body.style.backgroundImage = "url('glock.jpg')";
 }
 
 function rubberduck1(){
@@ -320,6 +329,8 @@ function rubberduck1(){
 	butt1.style.cssText = "display:none;";
 	butt2.style.cssText = "display:none;";
 	butt3.style.cssText = "display:none;";
+
+	document.body.style.backgroundImage = "url('ducks.jpg')";
 }
 
 function bucket1(){
@@ -329,4 +340,6 @@ function bucket1(){
 	butt1.style.cssText = "display:none;";
 	butt2.style.cssText = "display:none;";
 	butt3.style.cssText = "display:none;";
+
+	document.body.style.backgroundImage = "url('bucket.jpg')";
 }
